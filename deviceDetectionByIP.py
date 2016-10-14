@@ -2,9 +2,6 @@ import os
 from os import listdir
 from string import *
 
-#Rikapapita.
-#Como lo supo.
-
 diccAP = {} #diccionario vacio
 #Variables para conocer la fecha del registro
 
@@ -20,15 +17,15 @@ for lineaDeCSV in ffileCSV:
     columnaIPAP =  strip(lineaLeidaCSV[2])
 
     ipPorRevisar= columnaIPAP
-    print 
-
+    
     #hostname = "google.com" #example
-    print columnaNameAP +'-'+columnaIPAP
+    
+    print '#############' + columnaNameAP +' - '+ columnaIPAP + '#############'
     hostname = str(columnaIPAP) 
     response = os.system("ping -c 1 " + hostname)
 
     #and then check the response...
     if response == 0:
-    	print columnaNameAP + 'is up!'
+    	print '\n'+ columnaNameAP + 'is up!'
     else:
-    	print columnaNameAP + 'is down!'
+    	print '\n'+ columnaNameAP + 'is down!'
