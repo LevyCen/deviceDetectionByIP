@@ -2,6 +2,8 @@ import os
 from os import listdir
 from string import *
 
+#Rikapapita.
+
 diccAP = {} #diccionario vacio
 #Variables para conocer la fecha del registro
 
