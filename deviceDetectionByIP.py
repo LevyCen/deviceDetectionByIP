@@ -3,6 +3,7 @@ from os import listdir
 from string import *
 
 #Rikapapita.
+#Como lo supo.
 
 diccAP = {} #diccionario vacio
 #Variables para conocer la fecha del registro
